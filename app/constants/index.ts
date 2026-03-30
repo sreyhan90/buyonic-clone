@@ -1,0 +1,935 @@
+export interface bestDealsType {
+  id: number;
+  name: string;
+  price: string;
+  oldPrice: string;
+  url: string;
+  image: string;
+  slug: string;
+}
+export interface giftingType {
+  id: string;
+  name: string;
+  price: number;
+  img1: string;
+  img2: string;
+  deliveryEta: string;
+  rating: number;
+}
+
+export interface iphoneType {
+  id: string;
+  price: number;
+  image: string;
+  deliveryEta: string;
+  rating: number;
+  title: string;
+  mrp: number;
+  ratingCount: number;
+  color: string;
+  storage: string;
+}
+export interface LaptopType {
+  id: string;
+  title: string;
+  image: string;
+  price: number;
+  mrp: number;
+  rating: number;
+  ratingCount: number;
+  deliveryEta: string;
+  company: string;
+  gen: string;
+  size: string;
+  processor: string;
+}
+export interface smartWatchType {
+  id: string;
+  title: string;
+  image: string;
+  price: number;
+  mrp: number;
+  rating: number;
+  ratingCount: number;
+  deliveryEta: string;
+  gender: string;
+  shape: string;
+}
+
+export interface monitorType {
+  id: string;
+  title: string;
+  image: string;
+  price: number;
+  mrp: number;
+  rating: number;
+  ratingCount: number;
+  deliveryEta: string;
+  PanelType: string;
+  SuitableFor: string;
+}
+export interface powerBankType {
+  id: string;
+  title: string;
+  image: string;
+  price: number;
+  mrp: number;
+  rating: number;
+  ratingCount: number;
+  deliveryEta: string;
+}
+export interface EyeWearType {
+  id: string;
+  title: string;
+  image1: string;
+  image2: string;
+  price: number;
+  mrp: number;
+  rating: number;
+  ratingCount: number;
+  deliveryEta: string;
+}
+export interface winterColletionType {
+  id: string;
+  title: string;
+  image1: string;
+  image2: string;
+  price: number;
+  mrp: number;
+  rating: number;
+  ratingCount: number;
+  deliveryEta: string;
+}
+
+export const product: bestDealsType[] = [
+  {
+    id: 1,
+    name: "iphone",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/o/d/1/-original-imahggetmzzanrty.jpeg?q=70&crop=false",
+    price: "3500",
+    oldPrice: "6900",
+    url: "iphone",
+    slug: "iphone",
+  },
+  {
+    id: 2,
+    name: "Gaming Laptop",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/computer/1/y/3/-original-imahgfdyaaghwzef.jpeg?q=70&crop=false",
+    price: "6599",
+    oldPrice: "9999",
+    url: "gaminglaptop",
+    slug: "GamingLaptop",
+  },
+  {
+    id: 3,
+    name: "smart watch",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/3/s/p/-original-imahfmpuzzq4yt8m.jpeg?q=70&crop=false",
+    price: "120",
+    oldPrice: "359",
+    url: "smartwatch",
+    slug: "smartwatch",
+  },
+  {
+    id: 4,
+    name: "Monitor",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/monitor/w/o/x/-original-imahdt6yqymkzf95.jpeg?q=70&crop=false",
+    price: "470",
+    oldPrice: "999",
+    url: "monitor",
+    slug: "Monitor",
+  },
+  {
+    id: 5,
+    name: "Power Banks",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/power-bank/r/d/k/-original-imagxyv3ervzp8hy.jpeg?q=70&crop=false",
+    price: "250",
+    oldPrice: "300",
+    url: "powerbank",
+    slug: "PowerBanks",
+  },
+];
+
+export const productGift: giftingType[] = [
+  {
+    id: "Z8N",
+    name: "Cosy Luxe Hoodie",
+    img1: "https://cdn.shopify.com/s/files/1/0156/6146/files/images-BrushedBackFleeceFullLengthHoodieGSRichMaroonB5B5O_NBZQ_2421_V1_1920x.jpg",
+    img2: "https://cdn.shopify.com/s/files/1/0156/6146/files/images-ANNOTATED_PDP_24581576_1920x.jpg",
+    price: 849,
+    deliveryEta: "Sat, 30 Nov",
+    rating: 4.8,
+  },
+  {
+    id: "A7F",
+    name: "Sports Bottle With Straw",
+    img1: "https://cdn.shopify.com/s/files/1/0156/6146/files/images-SportsBottlewithStrawLidGSAthleticBurgundyI1B6L_RB6Y_0033_1920x.jpg?v=1752751893",
+    img2: "https://cdn.shopify.com/s/files/1/0156/6146/files/images-SportsBottlewithStrawLidGSAthleticBurgundyI1B6L_RB6Y_0037_1920x.jpg",
+    price: 61,
+    deliveryEta: "Tue, 26 Nov",
+    rating: 4.3,
+  },
+  {
+    id: "X2B",
+    name: "Midi 3pk Socks",
+    img1: "https://cdn.shopify.com/s/files/1/0156/6146/files/images-MidiCrewSock3pkGSCloudPinkGSResetPinkGSRichMaroonI3A6Z_KC48_0128_V1_1080x.jpg?v=1759483652",
+    img2: "https://cdn.shopify.com/s/files/1/0156/6146/files/images-MidiCrewSock3pkGSCloudPinkGSResetPinkGSRichMaroonI3A6Z_KC48_0126_V1_1080x.jpg?v=1759483652",
+    price: 23,
+    deliveryEta: "Thu, 28 Nov",
+    rating: 4.5,
+  },
+  {
+    id: "M9Q",
+    name: "Power Zip Up Hoodie",
+    img1: "https://cdn.shopify.com/s/files/1/0156/6146/files/images-PowerOriginalsZipUpHoodieGSDeepPetrolBlueA4B9T_UDRL_0493_1920x.jpg",
+    img2: "https://cdn.shopify.com/s/files/1/0156/6146/files/images-ANNOTATED_PDP_24294543_1920x.jpg",
+    price: 79,
+    deliveryEta: "Wed, 27 Nov",
+    rating: 4.7,
+  },
+];
+
+export const productIphone: iphoneType[] = [
+  {
+    id: "I7A",
+    title: "Apple iPhone 16 (Teal, 128 GB)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/o/l/2/-original-imahgfmzvanpgncf.jpeg",
+    price: 1250,
+    mrp: 1500,
+    rating: 3.9,
+    ratingCount: 7.8,
+    deliveryEta: "Mon, 24 Nov",
+    color: "x",
+    storage: "128 GB",
+  },
+  {
+    id: "B9X",
+    title: "Apple iPhone 14 (Blue, 128 GB)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg",
+    price: 1400,
+    mrp: 2000,
+    rating: 4.2,
+    ratingCount: 12.8,
+    deliveryEta: "Tue, 16 Nov",
+    color: "Blue",
+    storage: "128 GB",
+  },
+  {
+    id: "T6Q",
+    title: "Apple iPhone 16 Pro (Titanium, 256 GB)",
+    image:
+      "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/o/o/9/-original-imahggev6y5zhbjz.jpeg",
+    price: 2100,
+    mrp: 2600,
+    rating: 3.5,
+    ratingCount: 5.4,
+    deliveryEta: "Fri, 27 Nov",
+    color: "x",
+    storage: "256 GB",
+  },
+  {
+    id: "P4M",
+    title: "Apple iPhone 15 (Pink, 128 GB)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg",
+    price: 2750,
+    mrp: 3500,
+    rating: 4.7,
+    ratingCount: 13.7,
+    deliveryEta: "Sun, 12 Nov",
+    color: "x",
+    storage: "128 GB",
+  },
+  {
+    id: "K3B",
+    title: "Apple iPhone 16 (Black, 512 GB)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/n/q/h/-original-imahgfmzjj8gtqbc.jpeg",
+    price: 3500,
+    mrp: 4000,
+    rating: 4.2,
+    ratingCount: 6.9,
+    deliveryEta: "Mon, 24 Nov",
+    color: "Black",
+    storage: "512 GB",
+  },
+  {
+    id: "R5D",
+    title: "Apple iPhone 14 (RED, 128 GB)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/r/k/o/-original-imaghx9qtwbnhwvy.jpeg",
+    price: 2250,
+    mrp: 2280,
+    rating: 3.9,
+    ratingCount: 13.7,
+    deliveryEta: "Mon, 24 Nov",
+    color: "x",
+    storage: "128 GB",
+  },
+  {
+    id: "C8S",
+    title: "Apple iPhone 13 (Blue, 256 GB)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg",
+    price: 3500,
+    mrp: 3850,
+    rating: 4.9,
+    ratingCount: 26.7,
+    deliveryEta: "Wed, 22 Nov",
+    color: "Blue",
+    storage: "256 GB",
+  },
+  {
+    id: "M2L",
+    title: "Apple iPhone 17 (Mist Blue, 256 GB)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/p/x/y/-original-imahft5gkyd8wcqc.jpeg?",
+    price: 2900,
+    mrp: 3000,
+    rating: 4.4,
+    ratingCount: 12.5,
+    deliveryEta: "Sun, 29 Nov",
+    color: "Blue",
+    storage: "256 GB",
+  },
+  {
+    id: "S9K",
+    title: "Apple iPhone Air (Space Black, 512 GB)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/r/y/1/-original-imahft57fwtucrsa.jpeg?",
+    price: 3900,
+    mrp: 4000,
+    rating: 3.9,
+    ratingCount: 2.5,
+    deliveryEta: "Sat, 29 Nov",
+    color: "Black",
+    storage: "512 GB",
+  },
+];
+
+export const productLaptop: LaptopType[] = [
+  {
+    id: "H5V",
+    title:
+      "HP Victus 15 Intel Core i5 12th Gen 12450H - (8 GB/512 GB SSD/Windows 11 Home)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/computer/j/b/e/-original-imahcd9ja2nvd4jv.jpeg?",
+    price: 2500,
+    mrp: 3010,
+    rating: 4.7,
+    ratingCount: 12.8,
+    deliveryEta: "Mon, 29 Nov",
+    company: "HP",
+    gen: "i5",
+    size: "15.6inch",
+    processor: "Intel",
+  },
+  {
+    id: "A9P",
+    title:
+      "Acer Predator Neo Intel Core i7 13th Gen 13700HX - (16 GB/512 GB SSD/Windows 11 Home)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/computer/m/z/c/-original-imahcd9cex9mbznp.jpeg",
+    price: 2350,
+    mrp: 2600,
+    rating: 4.8,
+    ratingCount: 25.6,
+    deliveryEta: "Wed, 18 Nov",
+    company: "Acer",
+    gen: "i7",
+    size: "16",
+    processor: "Intel",
+  },
+  {
+    id: "N3R",
+    title:
+      "Acer Nitro V AMD Ryzen 5 Hexa Core 6600H - (16 GB/512 GB SSD/Windows 11 Home)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/computer/s/l/3/-original-imahgfdyghgfets8.jpeg",
+    price: 3850,
+    mrp: 4500,
+    rating: 3.7,
+    ratingCount: 7.8,
+    deliveryEta: "Tomorrow",
+    company: "Acer",
+    gen: "X",
+    size: "16",
+    processor: "AMD Ryzen",
+  },
+  {
+    id: "V7O",
+    title:
+      "ASUS Vivobook Go 15 OLED, with Backlit Keyboard, AMD Ryzen 3 Quad Core 7320U",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/computer/x/u/b/-original-imahgfdfrdjmhgws.jpeg",
+    price: 3150,
+    mrp: 3200,
+    rating: 4.2,
+    ratingCount: 25.6,
+    deliveryEta: "Sun,21 Nov",
+    company: "ASUS",
+    gen: "X",
+    size: "15.6inch",
+    processor: "AMD Ryzen",
+  },
+  {
+    id: "H6R",
+    title:
+      "HP Victus AMD Ryzen 5 Hexa Core 5600H - (16 GB/512 GB SSD/Windows 11 Home)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/computer/r/w/y/-original-imahcd9hkkqxzcs6.jpeg",
+    price: 2650,
+    mrp: 3020,
+    rating: 4.6,
+    ratingCount: 12.7,
+    deliveryEta: "Wed, 20 Nov",
+    company: "HP",
+    gen: "X",
+    size: "15.6inch",
+    processor: "AMD Ryzen",
+  },
+  {
+    id: "M8T",
+    title:
+      "MSI Thin A15  Intel Core i7 13th Gen 13700HX - (16 GB/1 TB SSD/Windows 11 Home)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/computer/o/j/q/-original-imahgfdyczjhdyt4.jpeg",
+    price: 4500,
+    mrp: 5000,
+    rating: 3.2,
+    ratingCount: 45.7,
+    deliveryEta: "Fri, 22 Nov",
+    company: "X",
+    gen: "X",
+    size: "16",
+    processor: "Intel",
+  },
+];
+
+export const productSmartWatch: smartWatchType[] = [
+  {
+    id: "R8W",
+    title:
+      "Riva W9 ultra 2 Ultra Big Display Bluetooth with 100+ Sports Mode, IP68",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/h/d/i/49-w92-ultra2-smartwatch-sw142-android-ios-yaaristyle-yes-original-imahfw8gpt97b89d.jpeg",
+    price: 94,
+    mrp: 129,
+    rating: 4.1,
+    ratingCount: 2.6,
+    deliveryEta: "Sun, 30 Nov",
+    gender: "Male",
+    shape: "square",
+  },
+  {
+    id: "N4G",
+    title: "Noise Twist Go 1.39'' Display, Bluetooth Calling, Metallic Finish",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/e/g/x/35-306-wrb-sw-twistgo-std-blk-blk-android-ios-noise-yes-original-imah889zcdzvzcuf.jpeg",
+    price: 149,
+    mrp: 499,
+    rating: 4.4,
+    ratingCount: 35.7,
+    deliveryEta: "Tomorrow",
+    gender: "Male",
+    shape: "Round",
+  },
+  {
+    id: "F6X",
+    title:
+      "Fastrack Revoltt XR1-1.38 | BT Calling, Fast Charge, 100+ Sports Mode, IP68, Calculator",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/u/q/h/-original-imagx8nhjwxfayhj.jpeg",
+    price: 260,
+    mrp: 299,
+    rating: 3.8,
+    ratingCount: 25.4,
+    deliveryEta: "Fri, 21 Nov",
+    gender: "Female",
+    shape: "Round",
+  },
+  {
+    id: "G3D",
+    title:
+      "GOBOULT Drift BT Calling HD Display, 140+ Watchface, BT calling Smartwatch",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/e/w/6/-original-imaheeb4qgjf4fpa.jpeg",
+    price: 149,
+    mrp: 250,
+    rating: 4.1,
+    ratingCount: 2.8,
+    deliveryEta: "Thu, 20 Nov",
+    gender: "Female",
+    shape: "square",
+  },
+  {
+    id: "F9L",
+    title:
+      "Fire-Boltt Rise Luxe Stainless Steel Luxury, 47mm (1.85) Display, Games, 120+ Sports",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/f/6/p/-original-imahdyxrdswdda7c.jpeg",
+    price: 650,
+    mrp: 789,
+    rating: 4.9,
+    ratingCount: 1.2,
+    deliveryEta: "Tomorrow",
+    gender: "Male",
+    shape: "square",
+  },
+  {
+    id: "A7S",
+    title:
+      "Apple Watch Series 10 GPS 46mm Rose Gold Aluminium with Light Blush Sport Band",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/r/f/l/-original-imah4jndqjx6dzbf.jpeg",
+    price: 1500,
+    mrp: 2021,
+    rating: 4.7,
+    ratingCount: 5.6,
+    deliveryEta: "Sun, 22 Dec",
+    gender: "Male",
+    shape: "square",
+  },
+];
+
+export const productMonitor: monitorType[] = [
+  {
+    id: "A6M",
+    title:
+      "Acer Nitro 60.45 cm (24 inch) Full HD LED Backlit IPS Panel with sRGB 99%",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/monitor/g/9/9/-original-imahbk3vrnvhvhrn.jpeg",
+    price: 470,
+    mrp: 550,
+    rating: 4.4,
+    ratingCount: 1.2,
+    deliveryEta: "Sun, 30 Nov",
+    PanelType: "IPS Panel",
+    SuitableFor: "Gaming",
+  },
+  {
+    id: "M9Q",
+    title:
+      "MarQ by Flipkart 55.88 cm (22 inch) Full HD LED Backlit VA Panel Monitor (Office Monitor)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/monitor/w/o/x/-original-imahdt6yqymkzf95.jpeg",
+    price: 509,
+    mrp: 1049,
+    rating: 4.1,
+    ratingCount: 4.7,
+    deliveryEta: "Tomorrow",
+    PanelType: "Led",
+    SuitableFor: "Home and Office",
+  },
+  {
+    id: "A5R",
+    title:
+      "Acer 54.61 cm (22 inch) Full HD IPS Panel with sRGB 99%, ENERGY STAR Certified",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg",
+    price: 569,
+    mrp: 752,
+    rating: 3.5,
+    ratingCount: 11.9,
+    deliveryEta: "Mon, 24 Dec",
+    PanelType: "LED",
+    SuitableFor: "Home and Office",
+  },
+  {
+    id: "Z3P",
+    title:
+      "ZEBRONICS Pure Pixel 60.96 cm (24 inch) Full HD VA Panel with 250 nits brightness, HDMI, VGA",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/monitor/z/i/6/zeb-ea124-full-hd-24-2024-zeb-ea124-100hz-online-zebronics-original-imahf7v6fvf4w9tr.jpeg",
+    price: 1299,
+    mrp: 1350,
+    rating: 3.9,
+    ratingCount: 11.9,
+    deliveryEta: "Mon, 24 Dec",
+    PanelType: "IPS Panel",
+    SuitableFor: "Home & Office",
+  },
+  {
+    id: "Z7X",
+    title:
+      "ZEBRONICS 60.96 cm (24 inch) Full HD IPS Panel with 280 Nits Brightness, Built-in Speakers, HDR10, 99% sRGB",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/monitor/y/r/3/zeb-igm-101-zeb-n24a-full-hd-24-2024-zeb-igm-101-zeb-n24a-original-imah4baybwhnqbge.jpeg",
+    price: 780,
+    mrp: 999,
+    rating: 4.8,
+    ratingCount: 7.6,
+    deliveryEta: "Tommorow",
+    PanelType: "IPS Panel",
+    SuitableFor: "Gaming",
+  },
+];
+
+export const productpowerBank: powerBankType[] = [
+  {
+    id: "G4B",
+    title:
+      "GOBOULT 20000 mAh 22.5 W Power Bank  (Pure Black, Lithium Polymer, Fast Charging)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/power-bank/p/x/g/-original-imahecbckxz6vdgp.jpeg?q=70&crop=false",
+    price: 250,
+    mrp: 270,
+    rating: 3.5,
+    ratingCount: 1.2,
+    deliveryEta: "Mon, 22 Nov",
+  },
+  {
+    id: "A3P",
+    title:
+      "Ambrane 10000 mAh 22.5 W Power Bank  (Black, Lithium-ion, Power Delivery 3.0, Quick Charge)",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/power-bank/p/l/b/-original-imahanfb4wqjt4yg.jpeg",
+    price: 290,
+    mrp: 321,
+    rating: 4.7,
+    ratingCount: 4.8,
+    deliveryEta: "Tomorrow",
+  },
+  {
+    id: "M6C",
+    title: "MarQ 10000 mAh 22.5 W Compact Power Ban",
+    image:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/power-bank/h/4/k/-original-imahdzpnyxggthuf.jpeg",
+    price: 450,
+    mrp: 500,
+    rating: 3.2,
+    ratingCount: 4.8,
+    deliveryEta: "Sun, 23 Nov",
+  },
+];
+
+export const productEyeWear: EyeWearType[] = [
+  {
+    id: "C7S",
+    title: "Crystal Transparent Full Rim Square",
+    image1:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/transparent-full-rim-square-john-jacobs-rich-acetate-jj-e10235-c7-eyeglasses-chandler_g_2375_30_9_2025.jpg",
+    image2:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/transparent-full-rim-square-john-jacobs-rich-acetate-jj-e10235-c7-eyeglasses-chandler_g_2374_30_9_2025.jpg",
+    price: 330,
+    mrp: 390,
+    rating: 4.1,
+    ratingCount: 5.5,
+    deliveryEta: "Tomorrow",
+  },
+  {
+    id: "B4Q",
+    title: "Crystal Transparent Full Rim Square",
+    image1:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/black-full-rim-square-john-jacobs-jj-rich-acetate-jj-e70135-eyeglasses_dsc2247_11_02_2025.jpg",
+    image2:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/black-full-rim-square-john-jacobs-jj-rich-acetate-jj-e70135-eyeglasses_dsc2245_11_02_2025.jpg",
+    price: 430,
+    mrp: 490,
+    rating: 4.5,
+    ratingCount: 2.7,
+    deliveryEta: "Mon, 22 Dec",
+  },
+  {
+    id: "D6R",
+    title: "Dark Gunmetal Full Rim Rectangle",
+    image1:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/gunmetal-black-full-rim-rectangle-john-jacobs-supreme-steel-jj-e11540xs-c4-eyeglasses_g_2643_02_21_23.jpg",
+    image2:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/gunmetal-black-full-rim-rectangle-john-jacobs-supreme-steel-jj-e11540xs-c4-eyeglasses_g_2642_02_21_23.jpg",
+    price: 329,
+    mrp: 500,
+    rating: 4.2,
+    ratingCount: 1.1,
+    deliveryEta: "Mon, 22 Dec",
+  },
+  {
+    id: "S8B",
+    title: "Sky Blue Full Rim Square",
+    image1:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/john-jacobs-jj-e14486-c4-eyeglasses_g_7955.jpg",
+    image2:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/john-jacobs-jj-e14486-c4-eyeglasses_g_7954.jpg",
+    price: 390,
+    mrp: 510,
+    rating: 3.8,
+    ratingCount: 5.7,
+    deliveryEta: "Wed, 24 Dec",
+  },
+  {
+    id: "M4G",
+    title: "Mid Gunmetal Full Rim Square",
+    image1:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/gunmetal-red-full-rim-square-john-jacobs-supreme-steel-jj-e70039-eyeglasses__dsc9378_28_10_2024.jpg",
+    image2:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/gunmetal-red-full-rim-square-john-jacobs-supreme-steel-jj-e70039-eyeglasses__dsc9376_28_10_2024.jpg",
+    price: 430,
+    mrp: 499,
+    rating: 4.1,
+    ratingCount: 5.5,
+    deliveryEta: "Tomorrow",
+  },
+  {
+    id: "S5R",
+    title: "Sky Blue Full Rim Rectangle",
+    image1:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/blue-full-rim-rectangle-john-jacobs-rich-acetate-jj-e70080-c1-eyeglasses__dsc7482_18_10_2024.jpg",
+    image2:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/blue-full-rim-rectangle-john-jacobs-rich-acetate-jj-e70080-c1-eyeglasses__dsc7480_18_10_2024.jpg",
+    price: 510,
+    mrp: 599,
+    rating: 4.9,
+    ratingCount: 7.8,
+    deliveryEta: "Wed, 24 Dec",
+  },
+  {
+    id: "S9G",
+    title: "Silver Full Rim Geometric",
+    image1:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/john-jacobs-jj-e15274-c1-eyeglasses_g_7692_23_12_2022.jpg",
+    image2:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/john-jacobs-jj-e15274-c1-eyeglasses_g_7691_23_12_2022.jpg",
+    price: 390,
+    mrp: 410,
+    rating: 3.7,
+    ratingCount: 4.6,
+    deliveryEta: "Fri, 26 Dec",
+  },
+  {
+    id: "T2R",
+    title: "Tortoise Full Rim Rectangle",
+    image1:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/tortoise-full-rim-rectangle-john-jacobs-rich-acetate-jj-e70080-c2-eyeglasses__dsc7443_18_10_2024.jpg",
+    image2:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/tortoise-full-rim-rectangle-john-jacobs-rich-acetate-jj-e70080-c2-eyeglasses__dsc7442_18_10_2024.jpg",
+    price: 300,
+    mrp: 350,
+    rating: 4.5,
+    ratingCount: 7.8,
+    deliveryEta: "Tomorrow",
+  },
+];
+
+export const productwinter: winterColletionType[] = [
+  {
+    id: "B3S",
+    title: "Men Solid Round Neck Polyester Black T-Shirt",
+    image1:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/1/l/8/xxl-men-compression-tshirt-gym-and-sports-wear-tshirt-for-men-original-imahgs4wfzhrc2fs.jpeg",
+    image2:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/i/z/e/m-men-compression-tshirt-for-sports-kyk-original-imahgfxz4srfzjyw.jpeg",
+    price: 27,
+    mrp: 35,
+    rating: 3.9,
+    ratingCount: 9,
+    deliveryEta: "Tomorrow",
+  },
+  {
+    id: "M7H",
+    title: "Men Gym Colorblock Hooded Neck",
+    image1:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/s/c/1/xl-cut-sleeve-cap-zenfit-original-imahf5gz2mggxqje.jpeg",
+    image2:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/l/r/b/xl-cut-sleeve-cap-zenfit-original-imahf5gz7nztghzm.jpeg",
+    price: 99,
+    mrp: 120,
+    rating: 4.2,
+    ratingCount: 2.4,
+    deliveryEta: "Wed, 24 Nov",
+  },
+  {
+    id: "A4T",
+    title: "Men’s ActiveFit Round Neck Training Tee",
+    image1:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/e/t/k/l-compression-tights-half-sleeves-dry-fit-t-shirts-for-high-original-imahgj99zmd22wkv.jpeg",
+    image2:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/f/6/e/m-men-polyester-compression-half-sleeves-tshirt-kyk-original-imahgc85guc4pk3p.jpeg?q=70&crop=false",
+    price: 65,
+    mrp: 99,
+    rating: 4.1,
+    ratingCount: 4,
+    deliveryEta: "Tomorrow",
+  },
+  {
+    id: "P6F",
+    title: "Men’s PowerFlex Cotton Blend Sports T-Shirt",
+    image1:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/e/v/i/xxl-t1254-no-dv-eyebogler-original-imah8xjpy3e6fjbg.jpeg",
+    image2:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/n/0/t/xxl-t1254-no-dv-eyebogler-original-imah8xjpfxhyppxj.jpeg",
+    price: 139,
+    mrp: 150,
+    rating: 3.4,
+    ratingCount: 25,
+    deliveryEta: "Fri, 26 Nov",
+  },
+  {
+    id: "G9J",
+    title: "Men’s ActiveFit Solid Grey Joggers",
+    image1:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/track-pant/k/y/s/xxl-crj1-02-j6-crocodile-original-imah9qr4utauwq2x.jpeg?q=70&crop=false",
+    image2:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/track-pant/n/w/u/xxl-crj1-02-j6-crocodile-original-imah9qr43qyzqkzd.jpeg?q=70&crop=false",
+    price: 109,
+    mrp: 120,
+    rating: 4.9,
+    ratingCount: 8.8,
+    deliveryEta: "Tomorrow",
+  },
+  {
+    id: "B2J",
+    title: "Men’s ActiveFit Solid Blue Joggers",
+    image1:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/track-pant/n/9/s/xl-crj1-01-j2-crocodile-original-imah9qr4ndgukezt.jpeg?q=70&crop=false",
+    image2:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/track-pant/c/t/t/xl-crj1-01-j2-crocodile-original-imah9qr4pqzw783h.jpeg?q=70&crop=false",
+    price: 49,
+    mrp: 99,
+    rating: 4.1,
+    ratingCount: 42,
+    deliveryEta: "Tomorrow",
+  },
+  {
+    id: "G4H",
+    title: "Men’s Grey Athleisure Hooded Tee",
+    image1:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/u/f/x/m-gym-hoodies-for-men-hot-button-original-imah7gmeb9eycgyx.jpeg",
+    image2:
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/6/m/8/m-gym-hoodies-for-men-hot-button-original-imah7gmez9yztt6z.jpeg",
+    price: 159,
+    mrp: 209,
+    rating: 4.4,
+    ratingCount: 14,
+    deliveryEta: "wed, 24 Nov",
+  },
+];
+
+export const placeholders = [
+  "Search for products…",
+  "What are you looking for today?",
+  "Explore top deals and new arrivals",
+  "Find your next favorite product",
+  "Type to discover trending items",
+];
+
+// Navigates the user to a page based on what they searched for
+export const routes = {
+  // 📱 iPhone / Phone
+  iphone: "/iphone",
+  apple: "/iphone",
+  phone: "/iphone",
+  mobile: "/iphone",
+  ios: "/iphone",
+  smartphone: "/iphone",
+  iphone16: "/iphone",
+  iphone15: "/iphone",
+  iphone14: "/iphone",
+  applephone: "/iphone",
+
+  // 💻 Laptop
+  gaminglaptop: "/GamingLaptop",
+  laptop: "/GamingLaptop",
+  notebook: "/GamingLaptop",
+  gaming: "/GamingLaptop",
+  pc: "/GamingLaptop",
+  computer: "/GamingLaptop",
+  ultrabook: "/GamingLaptop",
+  macbook: "/GamingLaptop",
+
+  // ⌚ Smartwatch
+  watch: "/smartwatch",
+  smartwatch: "/smartwatch",
+  smart: "/smartwatch",
+  applewatch: "/smartwatch",
+  fitnesswatch: "/smartwatch",
+  wearable: "/smartwatch",
+  digitalwatch: "/smartwatch",
+
+  // 🖥 Monitor
+  monitor: "/Monitor",
+  display: "/Monitor",
+  screen: "/Monitor",
+  gamingmonitor: "/Monitor",
+  ultrawide: "/Monitor",
+  led: "/Monitor",
+  lcd: "/Monitor",
+
+  // 🔋 Powerbank
+  power: "/PowerBanks",
+  powerbank: "/PowerBanks",
+  battery: "/PowerBanks",
+  charger: "/PowerBanksk",
+  portablecharger: "/PowerBanks",
+  fastcharge: "/PowerBanks",
+  usbpower: "/PowerBanks",
+
+  // 👓 Eyeglasses
+  glasses: "/EyeWear",
+  spectacles: "/EyeWear",
+  glass: "/EyeWear",
+  eyewear: "/EyeWear",
+  EyeWear: "/EyeWear",
+  frame: "/EyeWear",
+  optical: "/EyeWear",
+  lens: "/EyeWear",
+  sunglass: "/EyeWear",
+  sunglasses: "/EyeWear",
+
+  // ❄️ Winter / Gym
+  gym: "/winterColletion",
+  workout: "/winterColletion",
+  winter: "/winterColletion",
+  cold: "/winterColletion",
+  hoodie: "/winterColletion",
+  jacket: "/winterColletion",
+  coat: "/winterColletion",
+  sweatshirt: "/winterColletion",
+  fitness: "/winterColletion",
+  training: "/winterColletion",
+  sport: "/winterColletion",
+  activewear: "/winterColletion",
+  running: "/winterColletion",
+
+  // 👕 Clothing general
+  clothes: "/winterColletion",
+  outfit: "/winterColletion",
+  fashion: "/winterColletion",
+  wear: "/winterColletion",
+  apparel: "/winterColletion",
+
+  // 🎧 Accessories (istersen genişlet)
+  headphone: "/PowerBanks",
+  earphone: "/PowerBanks",
+  earbuds: "/PowerBanks",
+  bluetooth: "/PowerBanks",
+  audio: "/PowerBanks",
+
+  // 🧠 Generic keywords (çok önemli)
+  tech: "/iphone",
+  electronics: "/iphone",
+  gadget: "/iphone",
+  device: "/iphone",
+
+  // 🔍 Common search variations
+  newphone: "/iphone",
+  bestphone: "/iphone",
+  cheapphone: "/iphone",
+  gamingpc: "/GamingLaptop",
+  bestlaptop: "/GamingLaptop",
+  cheaplaptop: "/GamingLaptop",
+
+  cheapwatch: "/smartwatch",
+  bestmonitor: "/Monitor",
+  cheapmonitor: "/Monitor",
+  fastcharger: "/PowerBanks",
+  portablepower: "/PowerBanks",
+  eyewearfashion: "/EyeWear",
+  winterwear: "/winterColletion",
+  gymwear: "/winterColletion",
+};
