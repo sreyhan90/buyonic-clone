@@ -116,8 +116,8 @@ const CartMenu = () => {
         {cartItems.length > 0 && (
           <div className="border-t pt-4">
             <div className="mb-4 flex items-center justify-between text-sm">
-              <span className="text-muted-foreground">Total</span>
-              <span className="text-lg font-bold">${totalPrice}</span>
+              <span className="text-muted-foreground mx-8">Total</span>
+              <span className="text-lg font-bold mx-8">${totalPrice}</span>
             </div>
             <SheetFooter className="mt-10">
               <SheetClose asChild>

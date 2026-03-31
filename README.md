@@ -110,18 +110,6 @@ npm start
 
 - 💼 Civil Engineer → Frontend Developer
 - 🚀 Focused on modern web technologies
-- 🎯 Goal: Become a professional frontend engineer in 2025
-
----
-
-## ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub!
-
----
-
-## 📬 Contact
-
-Feel free to reach out for collaboration or opportunities.
+- 🎯 Goal: Become a professional frontend engineer in 2026
 
 ---
