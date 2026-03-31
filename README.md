@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Buyonic - Modern E-Commerce Platform
 
-## Getting Started
+🚀 **Live Demo:** https://buyonicnextapp.vercel.app
 
-First, run the development server:
+Buyonic is a modern, fully responsive e-commerce web application built with **Next.js (App Router)** and **TypeScript**.
+It focuses on performance, scalability, and real-world frontend architecture.
+
+---
+
+## ✨ Features
+
+- 🔐 **Authentication System**
+  - Register / Login
+  - Local storage session handling
+  - Redirect after login (protected routes)
+
+- 🛒 **User-Based Cart System**
+  - Each user has their own cart
+  - Persistent cart with localStorage
+  - Quantity management & real-time updates
+
+- 💳 **Checkout System**
+  - Guest checkout & authenticated checkout
+  - Payment form validation:
+    - Card number (16 digits)
+    - Expiry date validation
+    - CVV validation
+
+  - Order success flow
+
+- 🎯 **Smart UX**
+  - Real-time form validation with error messages
+  - Smooth navigation & redirects
+  - Mobile-first responsive design
+
+- 🎨 **Modern UI**
+  - Tailwind CSS
+  - Clean component structure
+  - Interactive hover & animation effects
+
+---
+
+## 🧠 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **State Management:** React Hooks + Context API
+- **Icons:** lucide-react
+- **Data:** LocalStorage (Auth & Cart)
+
+---
+
+## 📸 Screens
+
+- 🏠 Home Page
+- 🛍️ Product Listings
+- 🛒 Cart
+- 💳 Checkout
+- 🔐 Authentication Pages
+- ❌ Custom Not Found Page
+
+---
+
+## ⚙️ Installation
 
 ```bash
+git clone https://github.com/sreyhan90/buyonic-clone.git
+cd buyonic-clone
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Key Highlights
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ✅ Implemented **user-specific cart system** (not global cart)
+- ✅ Built complete **checkout flow with validation**
+- ✅ Handled **Next.js App Router patterns (client/server separation)**
+- ✅ Solved real-world issues like:
+  - Suspense boundaries (`useSearchParams`)
+  - Redirect logic after login
+  - Persistent state handling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📌 Future Improvements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🔄 Stripe payment integration
+- 📦 Backend API (Node.js / Express)
+- 🧑‍💼 Admin dashboard
+- 🔍 Advanced filtering & search
+- ❤️ Wishlist system
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 👨‍💻 Author
+
+**Semir Reyhan**
+
+- 💼 Civil Engineer → Frontend Developer
+- 🚀 Focused on modern web technologies
+- 🎯 Goal: Become a professional frontend engineer in 2025
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
+
+---
+
+## 📬 Contact
+
+Feel free to reach out for collaboration or opportunities.
+
+---
