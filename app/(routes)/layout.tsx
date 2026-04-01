@@ -6,7 +6,7 @@ export const metadata = {
   title: "Buyonic",
   description: "Modern E-commerce App",
   icons: {
-    icon: "/logo.png",
+    icon: "/favicon.jpg",
   },
 };
 
