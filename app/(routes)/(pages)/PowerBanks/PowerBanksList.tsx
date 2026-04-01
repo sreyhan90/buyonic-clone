@@ -81,7 +81,7 @@ const PowerBanksList = ({ productpowerBank }: PowerBanksProps) => {
             {/* BUTTON */}
             <CardFooter className="px-0 pb-0 pt-2">
               <Button
-                className="w-full rounded-full bg-black py-5 text-white transition hover:bg-blue-600"
+                className="w-full rounded-full bg-black py-5 text-white transition hover:bg-blue-600 mb-3"
                 variant="default"
                 onClick={() => {
                   addToCart({

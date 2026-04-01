@@ -7,7 +7,6 @@ import { StarIcon } from "lucide-react";
 import { useCart } from "@/app/(routes)/cart/cart-context";
 import { toast } from "sonner";
 
-
 interface iphoneProps {
   productIphone: iphoneType;
 }
@@ -76,7 +75,7 @@ const IphoneList = ({ productIphone }: iphoneProps) => {
           {/* BUTTON */}
           <CardFooter className="px-0 pb-0 pt-2">
             <Button
-              className="w-full rounded-full bg-black py-5 text-white transition hover:bg-blue-600"
+              className="w-full rounded-full bg-black py-5 text-white transition hover:bg-blue-600 mb-3"
               variant="default"
               onClick={() => {
                 addToCart({

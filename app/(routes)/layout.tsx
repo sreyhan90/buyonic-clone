@@ -2,6 +2,14 @@ import Footer from "../(routes)/Footer";
 import Header from "../(routes)/Header";
 import { Toaster } from "@/components/ui/sonner";
 
+export const metadata = {
+  title: "Buyonic",
+  description: "Modern E-commerce App",
+  icons: {
+    icon: "/logo.png",
+  },
+};
+
 export default function RoutesLayout({
   children,
 }: {
